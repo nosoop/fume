@@ -1,0 +1,23 @@
+[project]
+name = "fume"
+description = "An asyncio-focused client for Steam"
+version = "0.0.1"
+
+requires-python = ">= 3.11"
+
+[project.optional-dependencies]
+dev = [
+    "mypy == 1.9.0",
+    "pytest == 8.2.0",
+    "ruff == 0.3.7"
+]
+
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = [
+    'setuptools',
+]
+
+[tool.ruff]
+line-length = 96
+lint.extend-select = ["ANN001", "ANN201", "ANN202"]

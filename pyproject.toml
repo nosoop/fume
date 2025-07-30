@@ -1,9 +1,13 @@
 [project]
 name = "fume"
-description = "An asyncio-focused client for Steam"
+description = "An asyncio-focused client for Steam.  Someday."
 version = "0.0.1"
 
 requires-python = ">= 3.11"
+
+dependencies = [
+    "protobug",
+]
 
 [project.optional-dependencies]
 dev = [

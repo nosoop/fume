@@ -14,6 +14,15 @@ class CMsgClientLogon(SteamProtobufMessage, msg_id=EMsg.ClientLogon):
 
 
 @protobug.message
+class CMsgClientLogOff(SteamProtobufMessage, msg_id=EMsg.ClientLogOff):
+    _: protobug.Bool | None = protobug.field(1, default=None)
+    """
+    protobug doesn't support empty messages, so implement an empty field for now so
+    serialization works.
+    """
+
+
+@protobug.message
 class CMsgClientLogonResponse(SteamProtobufMessage, msg_id=EMsg.ClientLogonResponse):
     eresult: protobug.Int32 | None = protobug.field(1, default=2)
     legacy_out_of_game_heartbeat_seconds: protobug.Int32 | None = protobug.field(

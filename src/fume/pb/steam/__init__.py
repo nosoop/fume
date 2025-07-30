@@ -27,5 +27,6 @@ from .clientserver_appinfo import (
 from .clientserver_appinfo import (
     CMsgClientPICSProductInfoResponse as CMsgClientPICSProductInfoResponse,
 )
+from .clientserver_login import CMsgClientLogOff as CMsgClientLogOff
 from .clientserver_login import CMsgClientLogon as CMsgClientLogon
 from .clientserver_login import CMsgClientLogonResponse as CMsgClientLogonResponse

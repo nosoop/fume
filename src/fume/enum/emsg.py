@@ -7,6 +7,7 @@ class EMsg(enum.IntEnum):
     Invalid = 0
     Multi = 1
 
+    ClientLogOff = 706
     ClientLogonResponse = 751
 
     ClientGetDepotDecryptionKey = 5438

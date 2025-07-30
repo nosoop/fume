@@ -9,6 +9,12 @@ from ._pbmessage import SteamProtobufMessage as SteamProtobufMessage
 from .base import CMsgMulti as CMsgMulti
 from .base import CMsgProtoBufHeader as CMsgProtoBufHeader
 from .clientserver import CMsgClientServersAvailable as CMsgClientServersAvailable
+from .clientserver_2 import (
+    CMsgClientGetDepotDecryptionKey as CMsgClientGetDepotDecryptionKey,
+)
+from .clientserver_2 import (
+    CMsgClientGetDepotDecryptionKeyResponse as CMsgClientGetDepotDecryptionKeyResponse,
+)
 from .clientserver_appinfo import (
     CMsgClientPICSChangesSinceRequest as CMsgClientPICSChangesSinceRequest,
 )

@@ -9,6 +9,9 @@ class EMsg(enum.IntEnum):
 
     ClientLogonResponse = 751
 
+    ClientGetDepotDecryptionKey = 5438
+    ClientGetDepotDecryptionKeyResponse = 5439
+
     ClientServersAvailable = 5501
     ClientLogon = 5514
 

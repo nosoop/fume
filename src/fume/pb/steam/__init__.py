@@ -4,6 +4,7 @@
 Namespace for all available protobuf messages.
 """
 
+from ._pbmessage import SteamMessage as SteamMessage
 from ._pbmessage import SteamProtobufMessage as SteamProtobufMessage
 from .base import CMsgMulti as CMsgMulti
 from .base import CMsgProtoBufHeader as CMsgProtoBufHeader
